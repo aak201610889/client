@@ -5,6 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 function Navbar({ Data, setData }) {
   const [catalog, setcatalog] = useState(Data)
   const [search, setsearch] = useState('')
+  
   const filter = () => { 
     const filtered = catalog.filter(item => {
       return item.name.toLowerCase().includes(search.toLowerCase())
