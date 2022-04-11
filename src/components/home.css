@@ -1,0 +1,96 @@
+ /* @font-face {
+    font-family: Bleeding_Cowboys;
+    src: url('./fonts/Bleeding_Cowboys.ttf');
+}  */
+.home{
+    width: 100vw;
+    height: 100vh;
+   
+   
+
+}
+
+.home>h1{color: white;
+text-shadow: 2px 2px 3px rgb(255, 115, 0);
+font-size: 3rem;
+position: absolute;
+top: 30%;
+right: 50px;
+}
+.home_short__story{
+    font-size: x-large;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(255, 106, 0);
+    width: 25%;
+    position: absolute;
+top: 30%;
+left: 100px;
+z-index: 7;
+}
+
+.home_short__story>button{
+    background-color: rgb(46, 3, 3);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 20px;
+
+    font-family: 'Bleeding_Cowboys';
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.slider>button{
+  
+   
+    z-index: 20;
+background-color: rgb(255, 255, 255);
+width: 50px;
+height: 50px;
+}
+.slider>button:nth-child(1){
+    position: absolute;
+    bottom: 80px;
+left: 0px;
+    margin-left: 20%;
+
+}
+.slider>button:nth-child(3){
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    margin-right: 20%;
+
+   
+}
+.slider>div{
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+
+    position: absolute;
+    bottom: 50px;
+ display: flex;
+ justify-content: space-between;
+
+   
+}
+.slider>button{
+    color: white;
+    background-color: rgba(7, 7, 7, 0.546);
+    border-radius: 50%;
+    width: 50px;
+    padding-top: 5px;
+    height: 50px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}

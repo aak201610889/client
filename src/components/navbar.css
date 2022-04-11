@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar{
+  position: absolute;
+  top:0px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.027);
+height: 50px;
+margin-left: 20px;
+
+z-index: 20;
+}
+.logo{
+ width: 15%;
+
+}
+.nav_search{
+  width: 42%;
+  background-color: rgba(70, 14, 14, 0.151);
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav_search>input{
+  background-color: rgba(70, 14, 14, 0);
+  width: 92%;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 32px;
+  border: none;
+    color: white;
+
+}
+.nav_search>input::placeholder{
+  color: rgba(255, 255, 255, 0.642);
+  margin-left: 50px;
+}
+.nav_search>input:focus{
+  outline: none;
+}
+
+.nav_search>.nav_search{
+  color: white;
+  font-size: 20px;
+  width: 8%;
+}
+.nav_links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+.nav_links>a,.logo>a{
+  text-decoration: none;
+  color: white;
+ text-shadow: rgb(234, 197, 10) 2px 2px 2px;
+}
+.nav_links>a>h1{
+  font-size: 1.4rem;
+  margin-right: 30px;
+}

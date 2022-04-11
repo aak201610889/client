@@ -1,0 +1,94 @@
+ .catalog{
+  display: flex;
+  width: 100%;
+
+
+  min-height: 100vh;
+
+
+
+}
+.cat_leftside{
+width: 25vw;
+  background-color: rgba(87, 10, 10, 0.18);
+  padding-top: 80px;
+}
+.cat_leftside>div{
+ 
+width: 80%;
+margin: 0 auto;
+  font-size: x-large;
+  color: white;
+  background-color: rgba(110, 18, 18, 0.152);
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 8px 2px;
+  border: 3px solid white;
+
+
+}
+
+
+.cat_rigthside{
+ width: 72%;
+} 
+ 
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+.card{
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.304);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid black;
+  margin-right: 2px;
+  padding-bottom: 20px;
+}
+.card>h3{
+  color: white;
+}
+.card>img{
+  height: 290px;
+  width:260px ;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.cat__card_btn{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.cat__card_btn>a>button{
+
+  width: 80px;
+  margin-top: 5px;
+  border: none;
+  padding: 2px;
+  border-radius: 20px;
+}
+.view__btn{
+  
+  color: rgb(102, 17, 17);
+  background-color: rgba(255, 255, 255, 0.87);
+}
+.download__btn{
+  background-color: rgba(102, 17, 17, 0.683);
+  color: rgba(255, 255, 255, 0.913);
+ 
+}
+@keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
