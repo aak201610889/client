@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import "./home.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-function Home({ data }) {
+import { useTranslation } from "react-i18next";
+function Home({ games }) {
+  const [data, setdata] = useState(games);
+
   const [game, setgame] = useState(1);
-const [showMore, setshowMore] = useState(false)
+  const [showMore, setshowMore] = useState(false);
   const increase = () => {
     if (game < data.length) {
-
       setgame(game + 1);
     }
     if (game === data.length) {
       setgame(1);
     }
-   
-  }
+  };
   const decrease = () => {
     if (game > 1) {
       setgame(game - 1);
@@ -22,7 +23,7 @@ const [showMore, setshowMore] = useState(false)
     if (game === 1) {
       setgame(data.length);
     }
-  }
+  };
   return (
     <div>
       {data
@@ -34,6 +35,9 @@ const [showMore, setshowMore] = useState(false)
             style={{
               backgroundImage: `url(${item.iamge})`,
               backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              
             }}
           >
             <h1>{item.name}</h1>
@@ -49,7 +53,7 @@ const [showMore, setshowMore] = useState(false)
                   setshowMore(!showMore);
                 }}
               >
-                {!showMore?'read More':'read Less'}
+                {!showMore ? "read More" : "read Less"}
               </button>
               <button> Download</button>
             </div>

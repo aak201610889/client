@@ -20,6 +20,12 @@ console.log(data);
       style={{
         backgroundImage: `url(./images/gobg.jpg)`,
         backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundColor: "black",
+        minHeight: "100vh",
+        height: "100%",
+        width: "100%",
       }}
     >
       <div className="cat_leftside">
@@ -31,11 +37,15 @@ console.log(data);
         >
           Best game
         </div>
-        <div onClick={() => { 
-        setdata(data.sort((a, b) =>Date.parse(b.date) -Date.parse( a.date)));
-          setcount(count - 1);
-        }}>
-          Newest
+        <div
+          onClick={() => {
+            setdata(
+              data.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+            );
+            setcount(count - 1);
+          }}
+        >
+          New
         </div>
         <div> Type of Game</div>
       </div>

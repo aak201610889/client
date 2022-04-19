@@ -12,6 +12,8 @@ function Signup() {
       style={{
         backgroundImage: `url(./images/bbb.jpg)`,
         backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
       className="signup"
     >

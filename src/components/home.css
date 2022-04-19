@@ -94,3 +94,40 @@ left: 0px;
   }
   
 }
+@media screen and (max-width: 1230px) {
+ 
+    .slider>div{
+        display: flex;
+        justify-content: center;
+align-items: center;
+        
+    }
+    .slider>div>img{
+        
+        
+        width: 50%;
+    }
+    .home_short__story{
+        display: none;
+    }
+    .home>h1{
+      position: absolute;
+      top: 50%;
+      margin-right: 20px;
+    }
+    .slider>button:nth-child(1){
+    position: absolute;
+    bottom: 2px;
+left: 0px;
+    margin-left: 20%;
+
+}
+.slider>button:nth-child(3){
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    margin-right: 20%;
+
+   
+}
+}

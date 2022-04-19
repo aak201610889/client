@@ -3,9 +3,12 @@ const data = [
   {
     id: 1,
     name: "Fire Day",
+    name_ar: "اليوم الناري",
     date: "2020-01-01",
     short_story:
-      "t was peaceful at Nambala Avenue in Cooktown when Dan Inka was having his night walk. It had been a long and exhausting day in the office, sorting out a mountain of paperwork, so he was quite relieved to get out of his sweaty suit.",
+      "It was peaceful at Nambala Avenue in Cooktown when Dan Inka was having his night walk. It had been a long and exhausting day in the office, sorting out a mountain of paperwork, so he was quite relieved to get out of his sweaty suit.",
+     short_story_ar:"كان الوضع هادئًا في شارع نامبالا في كوكتون عندما كان دان اينكا يمشي ليلًا. لقد كان يومًا طويلًا ومرهقًا في المكتب ، حيث كان يفرز عددًا كبيرًا من الأوراق ، لذلك كان مرتاحًا تمامًا للخروج من بدلته المليئة بالعرق. ",
+    
     iamge: "./images/wal1.jpg",
     type: "action",
     mainpage: true,
@@ -95,31 +98,7 @@ const data = [
     rate: "4",
     date:'2012-05-16'
   },
-  {
-    id: 5,
-    name: "batman",
-    date: "2021-05-06",
-    short_story: "super hero who will hit joker",
-    iamge: "./images/batman.jpg",
-    type: "action",
-    mainpage: false,
-
-    screen1: "./images/bat1.jpg",
-    screen2: "./images/bat2.jpg",
-    screen3: "./images/bat3.jpg",
-    screen4: "./images/bat4.jpg",
-    screen5: "./images/bat5.jpg",
-    screen6: "./images/bat6.jpg",
-    screen7: "./images/bat7.jpg",
-    cpu: "Intel Core i5-7265U (2.6 GHz)",
-    ram: "8 GB",
-    gpu: "Intel Rtx 3060",
-    youtube: "https://www.youtube.com/watch?v=wsf78BS9VE0",
-    rate: "3.5",
-    date:'2012-05-06'
-
-
-  },
+  
   // {
   //   id: 6,
   //   name: "god of war 5",

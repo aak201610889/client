@@ -12,12 +12,13 @@ import AddGame from './components/AddGame';
 import Reduirements from './Reduirements';
 function App() {
   const [Data, setData] = useState(data)
+  const [show, setshow] = useState('')
   return (
     <div className="App">
       <Router>
-        <Navbar Data={Data} setData={setData} />
+        <Navbar Data={Data} setData={setData} show={show} setshow={setshow} />
         <Routes>
-          <Route path="/" element={<Home data={Data} />} />
+          <Route path="/" element={<Home games={Data} />} />
           <Route path="/addgame" element={<AddGame />} />
           <Route path="/catalog" element={<Catalog data={Data} setdata={ setData} />} />
           <Route path="/catalog/:details" element={<Details data={Data} />} />

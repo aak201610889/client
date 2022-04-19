@@ -4,14 +4,15 @@
 
 
   min-height: 100vh;
-
+height: fit-content;
 
 
 }
 .cat_leftside{
 width: 25vw;
-  background-color: rgba(87, 10, 10, 0.18);
+  background-color: rgba(23, 10, 87, 0.18);
   padding-top: 80px;
+
 }
 .cat_leftside>div{
  
@@ -91,4 +92,11 @@ margin: 0 auto;
     opacity: 1;
   }
   
+}
+@media screen and (max-width: 500px) {
+
+
+ 
+
+
 }
